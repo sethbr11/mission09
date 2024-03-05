@@ -26,10 +26,6 @@ import basketballData from './CollegeBasketballTeams.json';
     Suite.
 */
 
-const marginStyle = {
-    margin: '50px',
-};
-
 interface TeamProps {
     school: string;
     city: string;
@@ -54,7 +50,7 @@ class TeamCard extends React.Component<TeamProps> {
 
 function TeamList() {
     return (
-        <div>
+        <div className="team-container">
             {basketballData.teams.map((oneTeam) => (
                 <TeamCard {...oneTeam} />
             ))}
@@ -63,6 +59,10 @@ function TeamList() {
 }
 
 function Heading() {
+    const marginStyle = {
+        margin: '50px',
+    };
+
     return (
         <div style={marginStyle}>
             <h1>March Madness</h1>
@@ -71,12 +71,11 @@ function Heading() {
                 Every year, the best college basketball programs in the country
                 compete in a single-elimination tournament to see who will be
                 crowned the national champion. With so many teams to keep track
-                of and standings changing every week, it can be hard to keep up
-                with all the action. That's where we come in. We've created a
-                web app that allows you to view the current standings, check the
-                schedule for upcoming games, and see the results of past games.
-                Whether you're a die-hard fan or just looking to fill out your
-                bracket, we've got you covered. Let the madness begin!
+                of and standings changing every week, it can be hard to keep
+                track of everyone. That's where we come in. We've compiled a
+                list of all the college basketball teams in the country, so you
+                can stay up to date on all the action. Check out the list below
+                and find your favorite team!
             </p>
         </div>
     );
