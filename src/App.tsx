@@ -14,9 +14,9 @@ import basketballData from './CollegeBasketballTeams.json';
     three different functions/components in addition to the App function:
     #1: A heading section at the top introducing the user to what the site is.
     #2: A team “card” that contains the following information about each school:
-    • School Name
-    • Mascot Name
-    • Location (City, State)
+        • School Name
+        • Mascot Name
+        • Location (City, State)
     #3: A list of team cards that shows all the teams on the list.
     Incorporate the components into your website to display a list of all the college
     basketball teams. You will need to figure out how to make the connection to the
