@@ -37,12 +37,12 @@
     }
 }
 
+/** CSS added in addition to the default create-react-app CSS */
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-
     flex: 0 0 calc(30% - 10px); /* Get about 3 cards per row */
     margin: 5px; /* Adjust margin as needed */
     border: 1px solid #ccc; /* Optional: Add border for clarity */
