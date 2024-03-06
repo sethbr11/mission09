@@ -35,7 +35,9 @@ interface TeamProps {
 
 class TeamCard extends React.Component<TeamProps> {
     render() {
+        // Props is an object that contains all the properties passed to the component
         const oneTeam = this.props;
+        // Return the layout for the card
         return (
             <div className="card">
                 <h2>{oneTeam.school}</h2>
@@ -51,6 +53,7 @@ class TeamCard extends React.Component<TeamProps> {
 function TeamList() {
     return (
         <div className="team-container">
+            {/* Loop through the teams and create a TeamCard for each one */}
             {basketballData.teams.map((oneTeam) => (
                 <TeamCard {...oneTeam} />
             ))}
